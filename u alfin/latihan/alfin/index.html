@@ -1,60 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Bootstrap Fixed</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<!-- navbar -->
 <header class="bg-purple">
   <div class="container">
     <nav class="navbar navbar-expand-sm navbar-dark">
       <!-- Brand/logo -->
-
-      <a class="navbar-brand" href="#">LOGO</a>
-      
-      <!-- Links -->
-      <ul class="navbar-nav navbar-main">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Link 1</a>
+        <a class="navbar-brand" href="#">LOGO</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- User -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav navbar-main">
+        <li class="nav-item active bg-active">
+          <a class="nav-link" href="#">Getting Started</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link 2</a>
+          <a class="nav-link" href="#">CSS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link 3</a>
+          <a class="nav-link" href="#">Components</a>
         </li>
-      </ul>
-
-      <ul class="navbar-nav navbar-account">
-        <li><a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal" id="link-register"><i class="fa fa-user"></i>Sign Up</a></li>
-        <li><a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal" id="link-login"><i class="fa fa-sign-out"></i>Login</a></li>
-      </ul>
-
+        <li class="nav-item">
+          <a class="nav-link" href="#">JavaScript</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Customize</a>
+        </li>
+        </ul>
+        <ul class="navbar-nav navbar-account">
+          <li><a class="nav-link btn" data-toggle="modal" data-target="#exampleModal" id="link-register"><i class="fa fa-user"></i>Sign Up</a></li>
+          <li><a class="nav-link btn" data-toggle="modal" data-target="#exampleModal" id="link-login"><i class="fa fa-sign-out"></i>Login</a></li>
+        </ul>
+      </div>
     </nav>
   </div>
 </header>
-
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Access</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- pils/tabs -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link" id="sign-tab" data-toggle="tab" href="#sign" role="tab" aria-controls="sign" aria-selected="false">Registration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Login</a>
+          </li>
+        </ul>
+        <!-- form modals -->
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+            <form>
+              <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Email</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="staticEmail">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputPassword" class="col-sm-3 col-form-label">Password</label>
+                <div class="col-sm-9">
+                  <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="tab-pane fade" id="sign" role="tabpanel" aria-labelledby="sign-tab">
+            <form>
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Username</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="staticEmail2" class="col-sm-3 col-form-label">Email</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="staticEmail2">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword2" class="col-sm-3 col-form-label">Password</label>
+              <div class="col-sm-9">
+                <input type="password" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Password (again)</label>
+              <div class="col-sm-9">
+                <input type="password" class="form-control">
+              </div>
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <p class="forgot-password"><a href="#">Click here if you forgot your password</a></p>
+        <button type="button" class="btn btn-primary">Login</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- get started -->
 <div class="container">
   <div class="jumbotron">
     <h1>Getting started</h1>
     <p>An overview of Bootstrap, how to download and use, basic templates and examples, and more.</p>
   </div>
 </div>
-
+<!-- announcement -->
 <div class="announcement">
   <div class="container">
-    <p><a href="#"><strong>Looking for Bootstrap 2.3.2 docs?</strong></a> We've moved it to a new home while we push forward with Bootstrap 3. <a href="#">Read the blog</a> for details.</p>
+    <p><a href="#"><b>Looking for Bootstrap 2.3.2 docs?</b></a> We've moved it to a new home while we push forward with Bootstrap 3. <a href="#"><b>Read the blog</b></a> for details.</p>
   </div>
 </div>
-
+<!-- content -->
 <main>
   <div class="container">
 
@@ -94,9 +174,8 @@
       </div>
 
     </div>
-  </div>
-</main>
-
+  </div></main>
+<!-- footer -->
 <footer>
   <div class="container">
     <p>Designed and built with all the love in the world by <a href="#">@mdo</a> and <a href="#">@fat</a>.<br> Code licensed under <a href="#">Apache License v2.0</a>, documentation under <a href="#">CC BY 3.0</a>.</p>
@@ -106,90 +185,16 @@
       <li><a href="#">Releases</a></li>
     </ul>
   </div>
-  <a href="#" class="btn btn-light back-to-top">Back to top</a>
+  <a href="#" class="btn btn-light back-to-top">Back to Top</a>
 </footer>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Access</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-
-<ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Login</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Registration</a>
-  </li>
-</ul>
-<div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-    <form>
-      <div class="form-group row">
-        <label for="staticEmail" class="col-sm-3 col-form-label">Email</label>
-        <div class="col-sm-9">
-          <input type="text" class="form-control" id="staticEmail">
-        </div>
-      </div>
-      <div class="form-group row">
-        <label for="inputPassword" class="col-sm-3 col-form-label">Password</label>
-        <div class="col-sm-9">
-          <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-        </div>
-      </div>
-    </form>
-  </div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-    <form>
-      <div class="form-group row">
-        <label class="col-sm-3 col-form-label">Username</label>
-        <div class="col-sm-9">
-          <input type="text" class="form-control">
-        </div>
-      </div>
-      <div class="form-group row">
-        <label for="staticEmail2" class="col-sm-3 col-form-label">Email</label>
-        <div class="col-sm-9">
-          <input type="text" class="form-control" id="staticEmail2">
-        </div>
-      </div>
-      <div class="form-group row">
-        <label for="inputPassword2" class="col-sm-3 col-form-label">Password</label>
-        <div class="col-sm-9">
-          <input type="password" class="form-control">
-        </div>
-      </div>
-      <div class="form-group row">
-        <label class="col-sm-3 col-form-label">Password (again)</label>
-        <div class="col-sm-9">
-          <input type="password" class="form-control">
-        </div>
-      </div>
-    </form>
-  </div>
-</div>
-
-      </div>
-      <div class="modal-footer">
-        <p><a href="#">Click here if you forgot your password</a></p> 
-        <button type="button" class="btn btn-primary">Login</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
 
-    //Check to see if the window is top if not then display button
+    //Show and Hide Button to Top
     $(window).scroll(function(){
         if ($(this).scrollTop() > 100) {
             $('.back-to-top').fadeIn();
@@ -197,19 +202,22 @@ $(document).ready(function(){
             $('.back-to-top').fadeOut();
         }
     });
-
-    $('#link-register').click(function(){
-        $('#profile-tab').trigger('click');
-    });
-
-    $('#link-login').click(function(){
-        $('#home-tab').trigger('click');
-    });
-
-    //Click event to scroll to top
+    //Button to padding-top
     $('.back-to-top').click(function(){
-        $('html, body').animate({scrollTop : 0},800);
-        return false;
+      $('html, body').animate({scrollTop : 0},800);
+      return false;
+    });
+
+    // user
+    $(".nav-tabs a").click(function(){
+      $(this).tab('show');
+    });
+
+    $('#link-register').click(function() {
+      $(".nav-tabs a[href='#sign']").tab('show');
+    });
+    $('#link-login').click(function() {
+      $(".nav-tabs a[href='#login']").tab('show');
     });
 
 });

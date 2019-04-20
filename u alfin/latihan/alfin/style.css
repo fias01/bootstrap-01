@@ -1,5 +1,5 @@
 body {
-	font-family: 'Helvetica Neue';
+	/* font-family: 'Helvetica Neue'; */
 	font-size: 14px;
 }
 a {
@@ -36,6 +36,10 @@ a {
 
 .navbar-account i {
 	margin-right: 5px;
+}
+
+.navbar-account a:hover {
+	cursor: pointer;
 }
 
 /* Main */
@@ -169,6 +173,8 @@ footer ul li:before {
 footer ul li:first-child:before {
 	display: none;
 }
+
+/* Back to Top */
 .back-to-top {
 	position: fixed;
 	bottom: 10px;
