@@ -1,0 +1,260 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Tigas Bootstrap</title>
+  </head>
+  <body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-purple">
+      <div class="container">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav navbar-main">
+            <li class="nav-item active bg-active">
+              <a class="nav-link" href="#">Getting Started</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CSS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Components</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">JavaScript</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Customize</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav navbar-account">
+            <li class="nav-item">
+              <a class="nav-link text-right trigger-sigup" href="#" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-user"></i> Sigup</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-right trigger-login" href="#" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-sign-in-alt"></i> Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- sigup login -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" id="sigup-tab" href="#sigup" role="tab" aria-controls="sigup">Sigup</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" id="login-tab" href="#login" role="tab" aria-controls="login">Login</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane" id="sigup" role="tabpanel" aria-labelledby="sigup-tab">
+                  <h3 class="text-center">Sigup</h3>
+                  <form>
+                    <div class="form-group row">
+                      <label for="inputEmail3" class="col-sm-4 text-right col-form-label">Username</label>
+                      <div class="col-sm-6">
+                        <input type="text" class="form-control" id="inputEmail3">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputEmail3" class="col-sm-4 text-right col-form-label">Email</label>
+                      <div class="col-sm-6">
+                        <input type="email" class="form-control" id="inputEmail3">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword3" class="col-sm-4 text-right col-form-label">Password</label>
+                      <div class="col-sm-6">
+                        <input type="password" class="form-control" id="inputPassword3">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword3" class="col-sm-4 text-right col-form-label">Repeat Password</label>
+                      <div class="col-sm-6">
+                        <input type="password" class="form-control" id="inputPassword3">
+                      </div>
+                    </div>
+                  </form>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-primary border border-light">Submit</button>
+                    <button type="button" class="btn btn-sm btn-light border border-dark tutup" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                <div class="tab-pane" id="login" role="tabpanel" aria-labelledby="login-tab">
+                  <h3 class="text-center">Login</h3>
+                  <form>
+                    <div class="form-group row">
+                      <label for="inputEmail3" class="col-sm-4 col-form-label text-right">Username</label>
+                      <div class="col-sm-6">
+                        <input type="text" class="form-control" id="inputEmail3">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword3" class="col-sm-4 col-form-label text-right">Password</label>
+                      <div class="col-sm-6">
+                        <input type="password" class="form-control" id="inputPassword3">
+                      </div>
+                    </div>
+                  </form>
+                  <div class="modal-footer">
+                    <a href="#" class="text-primary font-weight-bold">Forgot your Password?</a>
+                    <button type="button" class="btn btn-sm btn-primary border border-light">Login</button>
+                    <button type="button" class="btn btn-sm btn-light border border-dark tutup" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- started -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="head">Getting started</h1>
+        <p class="head-content">An overview of Bootstrap, how to download and use, basic template and examples, and more.</p>
+      </div>
+    </div>
+    <!-- tambahan -->
+    <div class="header border-top border-bottom">
+      <div class="container">
+        <p><a href="#"><strong>Looking for Bootstrap 2.3.2 docs?</strong></a> We've moved it to a new home while we push forward with Bootstrap 3. <a href="#"><strong>Read the blog</strong></a> for details.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <!-- kiri -->
+        <div class="col-md-4 col-sm-3">
+          <ul class="nav flex-column rounded left-side">
+            <li class="nav-item">
+              <ul>
+                <li class="border-right"><a class="nav-link active font-weight-bold" href="#">Download Bootstrap</a></li>
+                <li><a class="nav-link" href="#">Download Options</a></li>
+                <li><a class="nav-link" href="#">Bootstrap CDN</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">What's Included</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Basic Template</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Browser support</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Licences FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Customizing Bootstrap</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- kanan -->
+        <div class="col-md-8 col-sm-9">
+          <div class="download">
+            <h2>Download Bootstrap</h2>
+            <p>There are a few easy ways to quickly get started with Bootstrap, each one appealing to a different skill level and use case. Read through to see what suits your particular needs.</p>
+            <h3>Download compiled CSS and JS</h3>
+            <p>The fastest way to get started is to get the compiled and minified versions of our CSS and JavaScript. No documentation or original source files are included.</p>
+            <a href="#" class="btn btn-primary">Download Bootstrap</a>
+          </div>
+          <div class="custom">
+            <h2>Customizing Bootstrap</h2>
+            <p>Customizing Bootstrap is best accomplished when you treat it as another dependency in your development stack. Doing so ensures future upgrades are as easy as possible while also familiarizing yourself to the intricacies of the framework</p>
+            <p><small>Once you've downloaded and included Bootstrap's CSS into your templates, you can move on to customizing the included components. To do so, create a new stylesheet (LESS, if you like, or just plain CSS) to house your customizations.</small></p>
+            <div class="note">
+              <h6>Compiled or minified?</h6>
+              <p>Unless you plan on reading a good chunk of the compiled CSS, go with the minified. It's the same code, just compacted. Less bandwidth is good, especially in production environments.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container-footer">
+            <div class="text-center">
+              Designed and built with all the love in the world by
+              <a href="#">@mdo</a>
+               and
+              <a href="#">@fat.</a>
+            </div>
+            <div class="text-center">
+              Code licensed under
+              <a href="#">Apache License v2.0</a>,
+              documentation under
+              <a href="#">CC BY 3.0.</a>
+            </div>
+
+            <p class="text-center">
+              <a href="#">Blog</a> 
+              <a href="#">Issues</a>  
+              <a href="#">Releases</a></p>
+      </div>
+    </div>
+
+    <button id="backTop" class="btn btn-back back-to-top" onclick="topFunction()"><a href="#">Back to top</a></button>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      //Script Button Bawah
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+        if (document.body.scrollTop > 500   || document.documentElement.scrollTop > 500) {
+          document.getElementById("backTop").style.display = "block";
+        } else {
+          document.getElementById("backTop").style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.documentElement.scrollTop = 0; //balik ke atas
+      }
+    </script>
+    <script>
+      $(document).ready(function(){
+
+        $(".trigger-sigup").click(function(){
+          $('.nav-tabs a[href="#sigup"]').tab('show');
+          $('#sigup-tab').addClass('active');
+          $('#sigup .tab-pane').addClass('show active');
+        });
+
+        $(".trigger-login").click(function(){
+          $('.nav-tabs a[href="#login"]').tab('show');
+          $('#login-tab').addClass('active');
+          $('#login .tab-pane').addClass('show active');
+        });
+
+        $(".tutup").click(function(){
+          $('#sigup-tab').removeClass('active');
+          $('#sigup .tab-pane').removeClass('show active');
+          $('#login-tab').removeClass('active');
+          $('#login .tab-pane').removeClass('show active');
+        });
+
+      });
+    </script>
+  </body>
+</html>

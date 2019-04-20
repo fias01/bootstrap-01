@@ -1,0 +1,82 @@
+.bg-purple{
+	background-color: #563d7c;
+}
+.navbar{
+	padding:10px 0px;
+	display: flex;
+}
+.navbar-brand{
+	margin-right: 100px;
+	font-weight: bold;
+}
+.navbar-item{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.active{
+}
+.jumbotron{
+	background-color: transparent;
+	padding-top: 100px;
+	padding-bottom: 10px;
+}
+.announcement{
+	background-color: #fafafa;
+	border-top: 1px solid #e6e6e6 ;
+	border-bottom:1px solid #e6e6e6 ;
+	padding: 10px ;
+}
+.left{
+	margin-top: 20px;
+	padding-top: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+	background-color: #fafafa;
+	border-radius: 10px;
+}
+.nav-link{
+	color: #716b7a;
+}
+.link-active{
+	border-right: 2px solid #e6e6e6;
+	font-weight: bold;
+}
+.right{
+	padding-top: 10px;
+	padding-left: 30px;
+	padding-right: 0px;
+}
+.right h1{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-bottom: 2px solid #e6e6e6;
+}
+.attention{
+	padding-top: 20px;
+	border-left: 7px solid #cfe3f2;
+	background-color: #f0f7fd;
+	margin-bottom: 100px;
+}
+.attention p{
+	padding-left: 15px;
+}
+.attent{
+	font-size: 18px;
+}
+.attentcont{
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+.footer{
+	border-top: 1px solid #e5e5e5;
+	padding-top: 50px;
+}
+.back{
+	position: fixed;
+	padding: 5px;
+	background-color: #eeeeee;
+	color: #9f9f9f;
+	bottom: 10px;
+	right: 10px;
+	cursor: pointer;
+}

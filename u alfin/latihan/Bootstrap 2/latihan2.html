@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <!-- Tombol -->
+    <div>
+      <ul class="nav justify-content-end container bg-light">
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#sigup">Sigup</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#" data-toggle="modal" data-target="#login">Login</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="sigup-tab" data-toggle="tab" href="#sigup" role="tab" aria-controls="sigup" aria-selected="true">Sigup</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="Login-tab" data-toggle="tab" href="#Login" role="tab" aria-controls="Login" aria-selected="false">Login</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="sigup" role="tabpanel" aria-labelledby="sigup-tab">...</div>
+              <div class="tab-pane fade" id="Login" role="tabpanel" aria-labelledby="Login-tab">...</div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- content -->
+    <div class="container">
+      <h1>Hello, world!</h1>
+    </div>
+      
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

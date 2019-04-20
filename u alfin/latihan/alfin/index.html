@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<header class="bg-purple">
+  <div class="container">
+    <nav class="navbar navbar-expand-sm navbar-dark">
+      <!-- Brand/logo -->
+
+      <a class="navbar-brand" href="#">LOGO</a>
+      
+      <!-- Links -->
+      <ul class="navbar-nav navbar-main">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Link 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 3</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav navbar-account">
+        <li><a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal" id="link-register"><i class="fa fa-user"></i>Sign Up</a></li>
+        <li><a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal" id="link-login"><i class="fa fa-sign-out"></i>Login</a></li>
+      </ul>
+
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>Getting started</h1>
+    <p>An overview of Bootstrap, how to download and use, basic templates and examples, and more.</p>
+  </div>
+</div>
+
+<div class="announcement">
+  <div class="container">
+    <p><a href="#"><strong>Looking for Bootstrap 2.3.2 docs?</strong></a> We've moved it to a new home while we push forward with Bootstrap 3. <a href="#">Read the blog</a> for details.</p>
+  </div>
+</div>
+
+<main>
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-sm-12 col-md-3">
+        <ul class="sidebar-links">
+          <li class="active"><a href="#">Download Bootstrap</a>
+            <ul>
+              <li><a href="#">Download options</a></li>
+              <li><a href="#">Bootstrap CDN What's included</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Basic template</a></li>
+          <li><a href="#">Browser support</a></li>
+          <li><a href="#">License FAQs</a></li>
+          <li><a href="#">Customizing Bootstrap</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-12 col-md-9">
+        <h2>Download Bootstrap</h2>
+        <hr>
+        <p>There are a few easy ways to quickly get started with Bootstrap, each one appealing to a different skill level and use case. Read through to see what suits your particular needs.</p>
+        <h3>Download compiled CSS and JS</h3>
+        <p>The fastest way to get started is to get the compiled and minified versions of our CSS and JavaScript. No documentation or original source files are included.</p>
+        <a href="#" class="btn btn-primary btn-lg">Download Bootstrap</a>
+        <br><br><br><br>
+        <h2>Customizing Bootstrap</h2>
+        <hr>
+        <p>Customizing Bootstrap is best accomplished when you treat it as another dependency in your development stack. Doing so ensures future upgrades are as easy as possible while also familiarizing yourself to the intricacies of the framework</p>
+        <p><small>Once you've downloaded and included Bootstrap's CSS into your templates, you can move on to customizing the included components. To do so, create a new stylesheet (LESS, if you like, or just plain CSS) to house your customizations.</small></p>
+        <div class="quote">
+          <h4>Compiled or minified?</h4>
+          <p>Unless you plan on reading a good chunk of the compiled CSS, go with the minified. It's the same code, just compacted. Less bandwidth is good, especially in production environments.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>Designed and built with all the love in the world by <a href="#">@mdo</a> and <a href="#">@fat</a>.<br> Code licensed under <a href="#">Apache License v2.0</a>, documentation under <a href="#">CC BY 3.0</a>.</p>
+    <ul>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Issues</a></li>
+      <li><a href="#">Releases</a></li>
+    </ul>
+  </div>
+  <a href="#" class="btn btn-light back-to-top">Back to top</a>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Access</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Login</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Registration</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <form>
+      <div class="form-group row">
+        <label for="staticEmail" class="col-sm-3 col-form-label">Email</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="staticEmail">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputPassword" class="col-sm-3 col-form-label">Password</label>
+        <div class="col-sm-9">
+          <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+    <form>
+      <div class="form-group row">
+        <label class="col-sm-3 col-form-label">Username</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="staticEmail2" class="col-sm-3 col-form-label">Email</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="staticEmail2">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputPassword2" class="col-sm-3 col-form-label">Password</label>
+        <div class="col-sm-9">
+          <input type="password" class="form-control">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-3 col-form-label">Password (again)</label>
+        <div class="col-sm-9">
+          <input type="password" class="form-control">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+      </div>
+      <div class="modal-footer">
+        <p><a href="#">Click here if you forgot your password</a></p> 
+        <button type="button" class="btn btn-primary">Login</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+    //Check to see if the window is top if not then display button
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('.back-to-top').fadeIn();
+        } else {
+            $('.back-to-top').fadeOut();
+        }
+    });
+
+    $('#link-register').click(function(){
+        $('#profile-tab').trigger('click');
+    });
+
+    $('#link-login').click(function(){
+        $('#home-tab').trigger('click');
+    });
+
+    //Click event to scroll to top
+    $('.back-to-top').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
+
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+.bg-purple {
+	background-color: #563d7c;
+}
+.bg-active {
+	background-color: #463265;
+}
+.navbar-main {
+	flex-grow: 1;
+}
+.navbar {
+	padding: 0px 0px;
+}
+.navbar-brand {
+	padding-right: 100px;
+	font-size: 25px;
+	font-weight: bold;
+}
+.navbar-nav .nav-item {
+	padding: 5px 5px;
+}
+
+/*.auth{
+	border: 0px solid;
+	background-color: transparent;
+}*/
+
+.tab-pane h3{
+	margin: 15px 0px;
+}
+
+.modal-footer a {
+	margin-right: 3rem;
+}
+
+/*jumbotron atas*/
+.jumbotron {
+	background-color: transparent;
+}
+.jumbotron-fluid {
+	padding: 57px 10px;
+	margin-bottom: 0px;
+}
+.head {
+	color: #685389;
+	font-size: 55px;
+}
+.head-content{
+	padding-right: 250px;
+	font-size: 23px;
+}
+
+
+.header {
+	margin-bottom: 35px;
+	background-color: #fafafa;
+}
+.header p {
+	margin: 10px 0;
+}
+
+
+.back-to-top {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	display: none;
+}
+
+
+.btn-back{
+	background-color: #eeeeee;
+}
+.btn-back a{
+	color: #2F4F4F;
+}
+
+
+
+.left-side {
+	padding: 10px 10px;
+	background-color: #f7f5fa;
+	padding-right: 0px;
+}
+.nav-item {
+	padding: 0px 0px;
+}
+.nav-item ul li a {
+	padding-top: 3.5px;
+	padding-bottom: 3.5px;
+}
+.nav-item a {
+	color: #837e8b;
+}
+.nav-item a:hover {
+	color: #6d598d;
+}
+.nav-item ul {
+	list-style: none;
+	padding-left: 0px;
+}
+.nav-item ul .border-right {
+	border-right-color: #563d7c;
+}
+.nav-item ul li .active {
+	color: #563d7c;
+}
+
+
+.download h2{
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #f5f5f5;
+}
+.download h3 {
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.download p{
+	font-size: 18px;
+	margin-bottom: 1.5rem;
+}
+
+.download .btn-primary {
+	font-weight: bold;
+	background-color: #428bca;
+}
+.download .btn-primary:hover {
+	background-color: #00008B;
+}
+
+.custom h2 {
+	margin-top: 80px;
+	margin-bottom: 1rem;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #f5f5f5;
+}
+.custom p{
+	font-size: 17px;
+	margin-bottom: 1rem;
+	margin-bottom: 1rem;
+}
+.custom p small{
+	font-size: 11px;
+	line-height: 10px;
+}
+
+
+
+.note {
+	border-left: 5px solid #cfe3f2;
+	padding: 18px;
+	background-color: #f0f7fd;
+}
+.note p {
+	font-size: 12px;
+}
+
+.footer {
+	border-top: 2px solid #f3f3f3 ;
+	margin-top: 5rem;
+	padding-top: 3rem;
+	padding-bottom: 4rem;
+	color:#808080;
+}
+.footer hr {
+	margin-top: 7rem;
+	margin-bottom: 4.5rem;
+}
